@@ -1,4 +1,4 @@
-module HaskellWorks.Tutorial.Performance where
+module Main where
 
 import System.Environment
 import Text.Printf
