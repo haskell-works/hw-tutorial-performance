@@ -23,3 +23,7 @@ cabal.sandbox.config
 /*.json
 /*.json.ib
 /*.json.bp
+/*.prof
+/*.ps
+/*.hp
+/*.aux
