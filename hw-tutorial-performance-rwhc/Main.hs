@@ -12,7 +12,7 @@ main = do
     printf "%f\n" (mean [1..d])
 
 mean :: [Double] -> Double
-mean xs = s / fromIntegral n
+mean xs = s / fromIntegral (n :: Integer)
   where
     (n, s)     = foldl' k (0, 0) xs
-    k (!n, !s) x = (n + 1, s + x)
+    k (!m, !t) x = (m + 1, t + x)
