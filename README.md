@@ -10,6 +10,17 @@ stack build
 
 stack build --executable-profiling --library-profiling --ghc-options="-fprof-auto -rtsopts"
 
+
+stack bench
+stack bench --benchmark-arguments '--output=$benchmark.html'
+stack build
+stack build --executable-profiling
+stack build --executable-profiling --ghc-options="-O2"
+stack build --executable-profiling --library-profiling
+stack build --executable-profiling --library-profiling --ghc-options="-fprof-auto -rtsopts -auto-all -caf-all -fforce-recomp -ddump-asm"
+stack build --executable-profiling --library-profiling --ghc-options="-fprof-auto -rtsopts -auto-all -caf-all -fforce-recomp"
+stack build --executable-profiling --library-profiling --ghc-options="-fprof-auto -rtsopts -prof -auto-all -caf-all -fforce-recomp"
+stack build --executable-profiling --library-profiling --ghc-options="-fprof-auto -rtsopts"
 ```
 
 
